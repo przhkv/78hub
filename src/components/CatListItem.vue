@@ -5,8 +5,12 @@
       {{ cat.details }}
     </span>
     <button @click="$emit('toggle', cat.id)">
-      <span v-if="cat.show"><</span>
-      <span v-else>></span>
+      <span v-if="cat.show">
+        &lt;
+      </span>
+      <span v-else>
+        &gt;
+      </span>
     </button>
   </li>
 </template>
