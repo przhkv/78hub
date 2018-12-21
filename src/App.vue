@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Поиск</h1>
-    <TodoList/>
+    <TodoList />
   </div>
 </template>
 

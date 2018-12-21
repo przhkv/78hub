@@ -33,7 +33,7 @@ export default {
         {
           id: catId++,
           text: '2-23557/2-23558',
-          details: '1911',
+          details: '1911'
         },
         {
           id: catId++,
@@ -44,7 +44,7 @@ export default {
           id: catId++,
           text: 'X-67933/X-67854',
           details: '1910'
-        },
+        }
       ]
     }
   },
@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     toggle (id) {
-	  this.cats = this.cats.map(cat =>
+      this.cats = this.cats.map(cat =>
         (cat.id !== id) ? cat : Object.assign({}, cat, { show: !cat.show })
       )
     }

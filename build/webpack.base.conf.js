@@ -1,4 +1,5 @@
 var path = require('path')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
@@ -62,5 +63,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new VueLoaderPlugin()
+  ]
 }
